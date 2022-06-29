@@ -19,6 +19,7 @@ public class Main {
         }
     }
 
+
     public static void task2(int clientDeviceYear, int clientOS) {
         int currentYear = LocalDate.now().getYear();
         if (clientDeviceYear >= currentYear && clientOS == 1) {
