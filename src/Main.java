@@ -38,13 +38,17 @@ public class Main {
         int deliveryDuration = 1;
         if (deliveryDistance <= 20) {
             result = deliveryDuration * 1;
+            return result;
         } else if (deliveryDistance >= 20 && deliveryDistance <= 60) {
             result = deliveryDuration * 2;
+            return result;
         } else if (deliveryDistance >= 60 && deliveryDistance <= 100) {
             result = deliveryDuration * 3;
+            return result;
             
         }
-        System.out.println(result);
+
+
         return result;
     }
 
