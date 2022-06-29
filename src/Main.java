@@ -34,16 +34,18 @@ public class Main {
     }
 
     public static int delivery(int deliveryDistance) {
-        int a = 1;
+        int result = 1;
         int deliveryDuration = 1;
         if (deliveryDistance <= 20) {
-            a = deliveryDuration * 1;
+            result = deliveryDuration * 1;
         } else if (deliveryDistance >= 20 && deliveryDistance <= 60) {
-            a = deliveryDuration * 2;
+            result = deliveryDuration * 2;
         } else if (deliveryDistance >= 60 && deliveryDistance <= 100) {
-            a = deliveryDuration * 3;
+            result = deliveryDuration * 3;
+            
         }
-        return a;
-
+        System.out.println(result);
+        return result;
     }
+
 }
