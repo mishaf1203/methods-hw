@@ -20,8 +20,6 @@ public class Main {
         }
 
 
-
-
     public static void appYear(int clientDeviceYear, int clientOS) {
         int currentYear = LocalDate.now().getYear();
         if (clientDeviceYear >= currentYear && clientOS == 1) {
