@@ -7,17 +7,19 @@ public class Main {
 
         appYear(2002, 1);
 
-        delivery(95);
+
+        System.out.println(delivery(95));
 
     }
 
     public static void leapYear(int year) {
         if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
             System.out.println(year + " високосный год");
-        } else {
+        } else
             System.out.println(year + " не високосный год");
         }
-    }
+
+
 
 
     public static void appYear(int clientDeviceYear, int clientOS) {
@@ -38,18 +40,15 @@ public class Main {
         int deliveryDuration = 1;
         if (deliveryDistance <= 20) {
             result = deliveryDuration * 1;
-            return result;
         } else if (deliveryDistance >= 20 && deliveryDistance <= 60) {
             result = deliveryDuration * 2;
-            return result;
         } else if (deliveryDistance >= 60 && deliveryDistance <= 100) {
             result = deliveryDuration * 3;
-            return result;
             
         }
 
-
         return result;
+
     }
 
 }
