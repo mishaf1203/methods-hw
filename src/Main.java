@@ -4,10 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
         leapYear(2024);
-
         appYear(2002, 1);
-
-
         System.out.println(delivery(95));
 
     }
